@@ -1,5 +1,7 @@
 import logging
 import os
+from dotenv import load_dotenv
+load_dotenv('.env')
 
 from slack_bolt import App, BoltContext
 from slack_sdk.web import WebClient
