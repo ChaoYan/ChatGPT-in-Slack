@@ -5,6 +5,7 @@ RUN pip install -U pip && pip install -r requirements.txt
 
 FROM python:3.11.3-slim-buster as app
 WORKDIR /app/
+COPY .env /app/
 COPY *.py /app/
 RUN mkdir /app/app/
 COPY app/*.py /app/app/
